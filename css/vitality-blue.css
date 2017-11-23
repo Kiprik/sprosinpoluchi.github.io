@@ -247,7 +247,7 @@ header.video {
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.7); }
     .team-carousel .item .team-caption h3 {
-      margin: 0; }
+      margin-top: 200px; }
     .team-carousel .item .team-caption hr {
       max-width: 50px;
       margin: 5px auto; }
