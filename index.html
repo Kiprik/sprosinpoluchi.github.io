@@ -63,13 +63,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">О нас</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Чем мы занимаемся</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Команда</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#jurisdictions">Чем занимаемся</a>
+              <a class="nav-link js-scroll-trigger" href="#jurisdictions">Кому будет интересно</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#locations">Прайс-лист</a>
@@ -412,7 +412,25 @@
     </section>
 
     <!-- Block Button Call to Action -->
-    <a class="btn btn-block btn-full-width" href="#">Рассчитайте срок окупаемости проекта!</a>
+  <button class="btn btn-block btn-full-width" onClick="getElementById('win').removeAttribute('style');" type="button">Рассчитайте срок окупаемости проекта ↓</button>
+<div id="win" style="display:none; position: relative;">
+  <div class="overlay"></div>
+        <div class="visible">
+          <h3>Срок окупаемости проекта</h3>
+            <div class="content">
+              <div class="calc">
+	              <div class="row">
+		              <div class="col-6 formpadd">
+                  </div>
+                  <div class="col-6 formpadd">
+                  </div>
+            </div>
+          <button class="btn btn-block btn-full-width" type="button" onClick="getElementById('win').style.display='none';">Закрыть</button>
+      </div>
+  </div>
+
+
+
 
     <!-- Footer -->
     <footer class="footer" style="background-image: url('img/legal/backgrounds/bg-footer.jpg')">
