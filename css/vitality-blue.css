@@ -750,3 +750,28 @@ a.text-primary {
   right: 0; }
 
 }
+
+#final_price{
+font-size: 40px;
+font-weight: 900;
+}
+
+.calcul {
+  margin-left: 350px;
+}
+
+.calcul h3{
+ margin-left: 300px;
+ padding-top:45px ;
+ padding-bottom: 45px;
+}
+
+.calcul h4{
+  padding-bottom: 5px;
+}
+
+.calcul p{
+  padding-top: 20px;
+  padding-bottom: -10px;
+  font-weight: 500;
+}
