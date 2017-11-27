@@ -63,13 +63,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">О нас</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Чем мы занимаемся</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Команда</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#jurisdictions">Чем занимаемся</a>
+              <a class="nav-link js-scroll-trigger" href="#jurisdictions">Кому будет интересно</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#locations">Прайс-лист</a>
@@ -412,7 +412,74 @@
     </section>
 
     <!-- Block Button Call to Action -->
-    <a class="btn btn-block btn-full-width" href="#">Рассчитайте срок окупаемости проекта!</a>
+  <button class="btn btn-block btn-full-width" onClick="getElementById('win').removeAttribute('style');" type="button">Рассчитайте срок окупаемости проекта ↓</button>
+<div id="win" style="display:none; position: relative;">
+  <div class="overlay"></div>
+    <div class="calcul">
+        <div class="visible">
+          <h3>Срок окупаемости проекта</h3>
+            <div class="content">
+              <div class="calc">
+	              <div class="row">
+		              <div class="col-6 formpadd">
+                    <h4>Затратная часть</h4>
+                    <p>Стоимость доменного имени</p>
+                      <input type="number" name="t1" id="price-domen"/>
+                      <br>
+                    <p>Стоимость хостинга в год</p>
+                      <input type="number" name="t2" id="price-host"/>
+                      <br>
+                    <p>Стоимость разработки</p>
+                      <input type="number" name="t3" id="price-develop"/>
+                      <br>
+                    <p>Заработная плата администратора сайта</p>
+                      <input type="number" name="t4" id="price-admin"/>
+                      <br>
+                    <p>Заработная плата модератора сайта</p>
+                      <input type="number" name="t5" id="price-moder"/>
+                      <br>
+                    <p>Заработная плата эксперта сайта</p>
+                      <input type="number" name="t6" id="price-expert"/>
+                </div>
+                <div class="col-6 formpadd">
+                    <h4>Планируемая прибыль</h4>
+                    <p>Стоимость решения бытового совета</p>
+                      <input type="number" name="t7" id="price-bytov"/>
+                      <br>
+                    <p>Количество решений в месяц</p>
+                      <input type="number" name="t8" id="count-bytov"/>
+                      <br>
+                    <p>Стоимость решения проблемы малого бизнеса</p>
+                      <input type="number" name="t9" id="price-small"/>
+                      <br>
+                    <p>Количество решений в месяц</p>
+                      <input type="number" name="t10" id="count-small"/>
+                      <br>
+                    <p>Стоимость решения проблемы среднего бизнеса</p>
+                      <input type="number" name="t11" id="price-middle"/>
+                      <br>
+                    <p>Количество решений в месяц</p>
+                      <input type="number" name="t12" id="count-middle"/>
+                      <br>    <br>    <br>    <br>    <br>
+                      <h4>Срок окумаемости:</h4>
+                      <p class="price">
+                       <span name="itog" id="final_month">0</span> месяцев
+                      </p>
+                      <button id="raschet">Рассчитать!</button>
+                </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+          <button class="btn btn-block btn-full-width" type="button" onClick="getElementById('win').style.display='none';">Закрыть</button>
+
+
+  </div>
+
+
+
+
 
     <!-- Footer -->
     <footer class="footer" style="background-image: url('img/legal/backgrounds/bg-footer.jpg')">
@@ -486,7 +553,7 @@
     <script src="js/vitality.js"></script>
 
     <!-- build:remove:dist -->
-
+    <script src="js/calc.js"></script>
 
     <!-- /build -->
   </body>
