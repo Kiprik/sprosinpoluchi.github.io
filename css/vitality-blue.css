@@ -775,3 +775,8 @@ font-weight: 900;
   padding-bottom: -10px;
   font-weight: 500;
 }
+
+.centerdiv{
+  margin: 50px auto;
+
+}
