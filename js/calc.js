@@ -16,7 +16,7 @@ $('#raschet').click(function(){
   var count_middle=$("#count-middle").val();
   var final_month=((price_domen*1+price_host*1+price_develop*1+price_admin*12+price_moder*12+price_expert*12)/(price_bytov*count_bytov+price_small*count_small+price_middle*count_middle));
   var final=Math.ceil(final_month);
-  $("#final_month").text(final_month+" "+ final);
+  $("#final_month").text(final);
 });
 
 })
