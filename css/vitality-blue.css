@@ -646,7 +646,7 @@ footer.footer {
   footer.footer a {
     color: rgba(255, 255, 255, 0.7); }
     footer.footer a:hover {
-      color: white; }
+      color: #FFFAFA; }
   footer.footer p {
     font-size: 22px; }
   footer.footer .footer-contact-details {
@@ -777,6 +777,15 @@ font-weight: 900;
 }
 
 .centerdiv{
-  margin: 50px auto;
+  margin-left: 400px;
+  margin-top: 100px;
 
+}
+#raschet{
+  margin-left: 170px;
+  margin-bottom: 25px;
+}
+
+.price{
+  margin-left: 220px;
 }
